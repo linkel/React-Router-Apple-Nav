@@ -52,13 +52,13 @@ const Content = styled.div`
     text-align: center;
 `
 
-const Iphone = (props) => {
+const Mac = (props) => {
     return (
         <div>
             <SubNav images={image_object}></SubNav>
-            <Content>Buy all our iPhones.</Content>
+            <Content>Get a Mac. Or a Linux.</Content>
         </div>
     )
 }
 
-export default Iphone;
+export default Mac;

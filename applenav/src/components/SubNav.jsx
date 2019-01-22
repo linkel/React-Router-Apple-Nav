@@ -30,13 +30,18 @@ const SubNavContainer = styled.div`
 const LinkHolder = styled.div`
     padding: 0 20px 0 20px;
     text-align: center;
+    &:hover {
+        div {
+        color: #6bf;
+        }
+    }
 `
 
 const SubNav = (props) => {
     return (
         <SubNavWrapper>
             <SubNavContainer>
-        {props.images.map( (obj) => (<LinkHolder><Link to={obj.text} key={obj.text}><Figure src={obj.image}/><div>{obj.text}</div></Link></LinkHolder>))}
+        {props.images.map( (obj) => (<LinkHolder><Link to={obj.text} key={obj.text}>{(obj.image) ? <Figure src={obj.image}/> : <div/>} <div>{obj.text}</div></Link></LinkHolder>))}
             </SubNavContainer>
         </SubNavWrapper>
     );

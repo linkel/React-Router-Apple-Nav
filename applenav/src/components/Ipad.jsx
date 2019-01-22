@@ -11,35 +11,33 @@ import styled from 'styled-components';
 
 const image_object = [
     {
-        image: iphonexs,
-        text: "iPhone Xs",
+        text: "MacBook",
     },
     {
-        image: iphonexr,
-        text: "iPhone Xr",
+        text: "MacBook Air",
     },
     {
-        image: iphone8,
-        text: "iPhone 8",
+        text: "MacBook Pro",
     },
     {
-        image: iphone8,
-        text: "iPhone 7",
+        text: "iMac",
     },
     {
-        image: ios,
-        text: "iOS 12",
+        text: "iMac Pro",
     },
     {
-        image: airpods,
-        text: "AirPods",
+        text: "Mac Pro",
     },
     {
-        image: accessories,
+        text: "Mac mini",
+    },
+    {
         text: "Accessories",
     },
     {
-        image: compare,
+        text: "Mojave",
+    },
+    {
         text: "Compare",
     },
 ]
@@ -52,13 +50,13 @@ const Content = styled.div`
     text-align: center;
 `
 
-const Iphone = (props) => {
+const Ipad = (props) => {
     return (
         <div>
             <SubNav images={image_object}></SubNav>
-            <Content>Buy all our iPhones.</Content>
+            <Content>Start from a blank slate. Our iPads.</Content>
         </div>
     )
 }
 
-export default Iphone;
+export default Ipad;

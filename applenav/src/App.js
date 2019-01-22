@@ -4,6 +4,9 @@ import './App.css';
 import NavWrapper from './components/NavWrapper';
 import styled from 'styled-components';
 import Iphone from './components/Iphone';
+import Home from './components/Home';
+import Mac from './components/Mac';
+import Ipad from './components/Ipad';
 
 const StyledNavWrapper = styled(NavWrapper)`
 
@@ -45,9 +48,9 @@ class App extends Component {
     return (
       <StyledApp>
         <NavBackground><StyledNavWrapper/></NavBackground>
-        <Route exact path="/" />
-        <Route path="/mac"/>
-        <Route path="/ipad"/>
+        <Route exact path="/" component={Home}/>
+        <Route path="/mac" component={Mac}/>
+        <Route path="/ipad" component={Ipad}/>
         <Route path="/iphone" component={Iphone}/>
         <Route path="/watch"/>
         <Route path="/tv"/>
